@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Al-Ahad Shopping Mall | Online Shop with Cash on Delivery</title>
+<meta name="description" content="Al-Ahad Shopping Mall is an online shop in Pakistan. Choose your products, add them to the cart and send your order on WhatsApp. Cash on delivery.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0e5c4a">
+<link rel="canonical" href="https://alahadmall.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e5c4a'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial%2Csans-serif' font-weight='700' font-size='38' fill='%23f0b93f'%3EA%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Al-Ahad Shopping Mall">
+<meta property="og:title" content="Al-Ahad Shopping Mall | Online Shop with Cash on Delivery">
+<meta property="og:description" content="Al-Ahad Shopping Mall is an online shop in Pakistan. Choose your products, add them to the cart and send your order on WhatsApp. Cash on delivery.">
+<meta property="og:url" content="https://alahadmall.github.io/">
+<meta property="og:image" content="https://alahadmall.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_PK">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Al-Ahad Shopping Mall | Online Shop with Cash on Delivery">
+<meta name="twitter:description" content="Al-Ahad Shopping Mall is an online shop in Pakistan. Choose your products, add them to the cart and send your order on WhatsApp. Cash on delivery.">
+<meta name="twitter:image" content="https://alahadmall.github.io/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"OnlineStore","name":"Al-Ahad Shopping Mall","url":"https://alahadmall.github.io/","image":"https://alahadmall.github.io/og-image.png","description":"Al-Ahad Shopping Mall is an online shop in Pakistan. Choose your products, add them to the cart and send your order on WhatsApp. Cash on delivery.","telephone":"+92 308 7078951","areaServed":"PK","priceRange":"Rs."}</script>
+<style>
+/* Layout: sticky header, hero strip, category chips + search, product grid, bottom cart bar that opens a sheet with WhatsApp checkout */
+:root {
+  color-scheme: light;
+  --bg: #f4f6f3;
+  --surface: #ffffff;
+  --fg: #14211c;
+  --muted: #5b6b64;
+  --line: #d9e0db;
+  --accent: #0e5c4a;
+  --accent-fg: #ffffff;
+  --gold: #d99a1e;
+  --gold-soft: #fbefd2;
+  --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --t1: #dcebe4; --t2: #f6e3c4; --t3: #dfe6f3; --t4: #f1dadb; --t5: #e4e0f1;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1613; --surface: #17221d; --fg: #e8efeb; --muted: #94a69d; --line: #2a3a33;
+    --accent: #3fc4a1; --accent-fg: #07211a; --gold: #f0b93f; --gold-soft: #3a2f12;
+    --t1: #1f3a2f; --t2: #3b3020; --t3: #1f2c44; --t4: #3d2527; --t5: #2c2745;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1613; --surface: #17221d; --fg: #e8efeb; --muted: #94a69d; --line: #2a3a33;
+  --accent: #3fc4a1; --accent-fg: #07211a; --gold: #f0b93f; --gold-soft: #3a2f12;
+  --t1: #1f3a2f; --t2: #3b3020; --t3: #1f2c44; --t4: #3d2527; --t5: #2c2745;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+body { -webkit-text-size-adjust: 100%; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+button, input, textarea { font: inherit; color: inherit; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--surface); }
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--line); }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 12px; }
+.brand { font-family: var(--font-display); font-weight: 700; font-size: 20px; line-height: 1.1; }
+.brand small { display: block; font-family: var(--font-body); font-weight: 400; font-size: 12px; color: var(--muted); }
+.wa-num { font-size: 13px; color: var(--muted); text-align: right; }
+.wa-num b { display: block; color: var(--fg); font-size: 14px; font-variant-numeric: tabular-nums; }
+
+.hero { padding-block: 22px 8px; display: grid; gap: 14px; }
+.hero h1 { font-size: clamp(26px, 6vw, 40px); line-height: 1.1; max-width: 18ch; }
+.hero p { margin: 0; color: var(--muted); max-width: 52ch; }
+.perks { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+.perks li { background: var(--gold-soft); border-radius: 999px; padding: 5px 12px; font-size: 13px; font-weight: 500; }
+
+.tools { display: grid; gap: 10px; padding-block: 14px 4px; }
+.search { width: 100%; padding: 11px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
+.chip { flex: none; border: 1px solid var(--line); background: var(--surface); padding: 7px 14px; border-radius: 999px; cursor: pointer; font-weight: 500; font-size: 14px; }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; padding-block: 12px 110px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.pic { aspect-ratio: 1 / 1; display: grid; place-items: center; position: relative; font-family: var(--font-display); font-weight: 700; font-size: 64px; color: var(--accent); }
+.pic .cat { position: absolute; left: 10px; bottom: 8px; font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.pic .tag { position: absolute; right: 8px; top: 8px; background: var(--surface); border-radius: 6px; padding: 2px 7px; font-family: var(--font-body); font-size: 11px; font-weight: 500; color: var(--muted); }
+.info { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.info h3 { font-size: 15px; line-height: 1.25; }
+.info .note { color: var(--muted); font-size: 13px; }
+.price { font-family: var(--font-display); font-weight: 700; font-size: 17px; font-variant-numeric: tabular-nums; margin-top: auto; padding-top: 6px; }
+.add { margin-top: 8px; width: 100%; padding: 9px; border: 0; border-radius: 8px; background: var(--accent); color: var(--accent-fg); font-weight: 600; cursor: pointer; }
+.add:hover { filter: brightness(1.08); }
+.empty { grid-column: 1 / -1; color: var(--muted); padding: 24px 0; }
+
+.cartbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; background: var(--surface); border-top: 1px solid var(--line); padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.cartbar .in { max-width: 1080px; margin: 0 auto; display: flex; gap: 12px; align-items: center; justify-content: space-between; }
+.cartbar .sum { font-size: 14px; color: var(--muted); }
+.cartbar .sum b { color: var(--fg); font-size: 16px; font-variant-numeric: tabular-nums; }
+.btn { border: 0; border-radius: 10px; padding: 11px 18px; background: var(--accent); color: var(--accent-fg); font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; }
+.btn.alt { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+.btn[aria-disabled="true"] { opacity: .45; pointer-events: none; }
+
+.scrim { position: fixed; inset: 0; z-index: 40; background: rgba(0,0,0,.45); }
+.sheet { position: fixed; z-index: 41; left: 0; right: 0; bottom: 0; max-height: 92%; overflow-y: auto; background: var(--surface); border-radius: 16px 16px 0 0; padding: 18px max(16px, env(safe-area-inset-right, 0px)) calc(18px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+@media (min-width: 700px) { .sheet { left: auto; width: 440px; top: 0; max-height: none; border-radius: 0; } }
+.sheet h2 { font-size: 22px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.line { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.line .nm { font-weight: 500; min-width: 0; }
+.line .lt { font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; }
+.qty { display: inline-flex; align-items: center; gap: 4px; }
+.qty button { width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); cursor: pointer; font-weight: 700; }
+.qty span { min-width: 26px; text-align: center; font-variant-numeric: tabular-nums; }
+.total { display: flex; justify-content: space-between; font-family: var(--font-display); font-size: 19px; font-weight: 700; padding: 14px 0 6px; }
+.field { display: grid; gap: 4px; margin-top: 10px; }
+.field label { font-size: 13px; font-weight: 600; }
+.field input, .field textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.hint { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+.actions { display: grid; gap: 8px; margin-top: 14px; }
+
+footer { border-top: 1px solid var(--line); background: var(--surface); }
+footer .wrap { padding-block: 22px 120px; color: var(--muted); font-size: 14px; display: grid; gap: 4px; }
+footer b { color: var(--fg); }
+@media (prefers-reduced-motion: no-preference) { .add, .chip, .btn { transition: filter .15s, background .15s; } }
+</style>
+</head>
+<body>
+<noscript><p style="padding:16px">Please turn on JavaScript to see the products and place an order. You can also order directly on WhatsApp: 0308 7078951.</p></noscript>
+<header>
+  <div class="wrap bar">
+    <div class="brand">Al-Ahad Shopping Mall<small>Online shop &middot; Cash on delivery</small></div>
+    <div class="wa-num">WhatsApp<b>0308 7078951</b></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Everyday things at honest prices.</h1>
+    <p>Pick what you like, add it to your cart and send the order on WhatsApp. We confirm by message and deliver to your door.</p>
+    <ul class="perks">
+      <li>Order on WhatsApp</li>
+      <li>Pay on delivery</li>
+      <li>Easy exchange</li>
+    </ul>
+  </section>
+
+  <section class="tools" aria-label="Find products">
+    <input id="q" class="search" type="search" placeholder="Search products" aria-label="Search products" autocomplete="off">
+    <div id="chips" class="chips" role="group" aria-label="Categories"></div>
+  </section>
+
+  <section id="grid" class="grid" aria-live="polite"></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Al-Ahad Shopping Mall</b></div>
+    <div>Orders and questions: WhatsApp <b>0308 7078951</b></div>
+    <div>Prices are in Pakistani rupees (Rs.). Delivery charges, if any, are confirmed on WhatsApp.</div>
+  </div>
+</footer>
+
+<div class="cartbar">
+  <div class="in">
+    <div class="sum"><span id="cnt">0 items</span><br><b id="tot">Rs. 0</b></div>
+    <button id="openCart" class="btn" type="button">View cart</button>
+  </div>
+</div>
+
+<div id="scrim" class="scrim" hidden></div>
+<aside id="sheet" class="sheet" role="dialog" aria-modal="true" aria-label="Your cart" hidden>
+  <h2>Your cart <button id="closeCart" class="btn alt" type="button">Close</button></h2>
+  <div id="lines"></div>
+  <div class="total"><span>Total</span><span id="tot2">Rs. 0</span></div>
+  <div class="field"><label for="cname">Your name</label><input id="cname" type="text" autocomplete="name"></div>
+  <div class="field"><label for="caddr">Delivery address</label><textarea id="caddr" rows="3" autocomplete="street-address"></textarea></div>
+  <p class="hint" id="hint">Add your name and address to send the order.</p>
+  <div class="actions">
+    <a id="send" class="btn" href="#" target="_blank" rel="noopener" aria-disabled="true">Send order on WhatsApp</a>
+    <button id="clear" class="btn alt" type="button">Empty cart</button>
+  </div>
+</aside>
+
+<script>
+/* ===== Shop settings: edit these ===== */
+const SHOP = { name: "Al-Ahad Shopping Mall", whatsapp: "923087078951" }; // number in international format, no + or spaces
+
+/* ===== Products: replace the sample items with your own. price is in Rs. ===== */
+const PRODUCTS = [
+  { id: 1,  name: "Men's Cotton Shalwar Kameez", cat: "Men",    price: 2800, note: "Summer cotton, 3 sizes", sample: true },
+  { id: 2,  name: "Men's Casual Shirt",          cat: "Men",    price: 1600, note: "Easy-fit, plain colours", sample: true },
+  { id: 3,  name: "Ladies Lawn Suit (3 piece)",  cat: "Ladies", price: 3500, note: "Printed lawn, dupatta included", sample: true },
+  { id: 4,  name: "Ladies Shawl",                cat: "Ladies", price: 1800, note: "Soft, winter weight", sample: true },
+  { id: 5,  name: "Kids School Bag",             cat: "Kids",   price: 1900, note: "Two zips, padded straps", sample: true },
+  { id: 6,  name: "Kids Sweater",                cat: "Kids",   price: 1200, note: "Ages 4 to 10", sample: true },
+  { id: 7,  name: "Steel Water Bottle 1L",       cat: "Home",   price: 950,  note: "Keeps water cool", sample: true },
+  { id: 8,  name: "Non-stick Frying Pan",        cat: "Home",   price: 1700, note: "26 cm, easy to clean", sample: true },
+  { id: 9,  name: "Bluetooth Earbuds",           cat: "Gadgets",price: 2400, note: "Charging case included", sample: true },
+  { id: 10, name: "Mobile Phone Cover",          cat: "Gadgets",price: 450,  note: "Tell us your phone model", sample: true },
+  { id: 11, name: "Rechargeable LED Light",      cat: "Gadgets",price: 1300, note: "Useful in load-shedding", sample: true },
+  { id: 12, name: "Bed Sheet (Double)",          cat: "Home",   price: 2200, note: "Cotton, 2 pillow covers", sample: true }
+];
+const TONES = { Men: "--t1", Ladies: "--t4", Kids: "--t2", Home: "--t3", Gadgets: "--t5" };
+
+const $ = (id) => document.getElementById(id);
+const money = (n) => "Rs. " + n.toLocaleString("en-PK");
+let cart = {}; let cat = "All"; let term = "";
+
+try { cart = JSON.parse(localStorage.getItem("ahad-cart") || "{}") || {}; } catch (e) { cart = {}; }
+const save = () => { try { localStorage.setItem("ahad-cart", JSON.stringify(cart)); } catch (e) {} };
+const byId = (id) => PRODUCTS.find((p) => p.id === Number(id));
+cart = Object.fromEntries(Object.entries(cart).filter(([id, q]) => byId(id) && q > 0));
+
+function totals() {
+  let n = 0, t = 0;
+  for (const [id, q] of Object.entries(cart)) { n += q; t += q * byId(id).price; }
+  return { n, t };
+}
+
+function renderChips() {
+  const cats = ["All", ...new Set(PRODUCTS.map((p) => p.cat))];
+  $("chips").innerHTML = cats.map((c) => `<button type="button" class="chip" data-cat="${c}" aria-pressed="${c === cat}">${c}</button>`).join("");
+}
+
+function renderGrid() {
+  const list = PRODUCTS.filter((p) => (cat === "All" || p.cat === cat) && p.name.toLowerCase().includes(term));
+  $("grid").innerHTML = list.length ? list.map((p) => `
+    <article class="card">
+      <div class="pic" style="background: var(${TONES[p.cat] || "--t1"})" aria-hidden="true">
+        ${p.name.charAt(0)}<span class="cat">${p.cat}</span>${p.sample ? '<span class="tag">Sample</span>' : ""}
+      </div>
+      <div class="info">
+        <h3>${p.name}</h3>
+        <div class="note">${p.note || ""}</div>
+        <div class="price">${money(p.price)}</div>
+        <button class="add" type="button" data-add="${p.id}">Add to cart</button>
+      </div>
+    </article>`).join("") : '<p class="empty">No products match your search.</p>';
+}
+
+function waLink() {
+  const { t } = totals();
+  const lines = Object.entries(cart).map(([id, q]) => { const p = byId(id); return `- ${p.name} x ${q} = ${money(p.price * q)}`; });
+  const msg = `Assalam o Alaikum, I want to order from ${SHOP.name}:\n\n${lines.join("\n")}\n\nTotal: ${money(t)}\nPayment: Cash on delivery\n\nName: ${$("cname").value.trim()}\nAddress: ${$("caddr").value.trim()}`;
+  return `https://wa.me/${SHOP.whatsapp}?text=${encodeURIComponent(msg)}`;
+}
+
+function renderCart() {
+  const { n, t } = totals();
+  $("cnt").textContent = n === 1 ? "1 item" : n + " items";
+  $("tot").textContent = money(t); $("tot2").textContent = money(t);
+  $("lines").innerHTML = n ? Object.entries(cart).map(([id, q]) => { const p = byId(id); return `
+    <div class="line">
+      <div class="nm">${p.name}</div><div class="lt">${money(p.price * q)}</div>
+      <div class="qty"><button type="button" data-dec="${id}" aria-label="One less">-</button><span>${q}</span><button type="button" data-inc="${id}" aria-label="One more">+</button></div>
+      <div></div>
+    </div>`; }).join("") : '<p class="hint">Your cart is empty. Add something you like.</p>';
+  const ready = n > 0 && $("cname").value.trim() && $("caddr").value.trim();
+  const send = $("send");
+  send.setAttribute("aria-disabled", ready ? "false" : "true");
+  send.href = ready ? waLink() : "#";
+  $("hint").textContent = ready ? "WhatsApp will open with your order ready to send. Press send there to place it." : (n ? "Add your name and address to send the order." : "Add at least one product first.");
+  save();
+}
+
+function openCart(open) { $("sheet").hidden = !open; $("scrim").hidden = !open; if (open) $("closeCart").focus(); }
+
+document.addEventListener("click", (e) => {
+  const t = e.target.closest("button"); if (!t) return;
+  if (t.dataset.cat) { cat = t.dataset.cat; renderChips(); renderGrid(); }
+  else if (t.dataset.add) { cart[t.dataset.add] = (cart[t.dataset.add] || 0) + 1; renderCart(); t.textContent = "Added"; setTimeout(() => (t.textContent = "Add to cart"), 700); }
+  else if (t.dataset.inc) { cart[t.dataset.inc]++; renderCart(); }
+  else if (t.dataset.dec) { if (--cart[t.dataset.dec] <= 0) delete cart[t.dataset.dec]; renderCart(); }
+  else if (t.id === "openCart") openCart(true);
+  else if (t.id === "closeCart") openCart(false);
+  else if (t.id === "clear") { cart = {}; renderCart(); }
+});
+$("scrim").addEventListener("click", () => openCart(false));
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") openCart(false); });
+$("q").addEventListener("input", (e) => { term = e.target.value.trim().toLowerCase(); renderGrid(); });
+["cname", "caddr"].forEach((id) => $(id).addEventListener("input", renderCart));
+
+renderChips(); renderGrid(); renderCart();
+</script>
+</body>
+</html>
